@@ -1,0 +1,8 @@
+1.Each SongCacheImpl instance uses ConcurrentHashMap, which is thread-safe, storing pairs of songId and numPlays.
+
+2.Use PriorityQueue to sort songIds. Return Top N songs.
+      // The Implementation of Comparator is that: compare numPlays,
+      // if numPlays are equal return the comparing result of two Strings by using compareTo().
+
+3. Time complexity of getTopNSongsPlayed() is O(M*logN),
+      // in which M is the number of songs and N is input n of getTopNSongsPlayed().
